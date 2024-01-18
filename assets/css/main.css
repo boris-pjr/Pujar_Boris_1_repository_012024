@@ -80,4 +80,24 @@ header img {
   font-size: 16px;
 }
 
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px 0 50px 0;
+  background-color: #FFFFFF;
+}
+.fonctionnement__rectangle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fonctionnement__rectangle--number {
+  display: flex;
+  flex-direction: row;
+  background-color: #F6F6F6;
+  height: 72px;
+  border-radius: 20px;
+}
+
 /*# sourceMappingURL=main.css.map */
