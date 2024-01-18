@@ -1,0 +1,14 @@
+{
+  "name": "pujar_boris_1_repository_012024",
+  "version": "1.0.0",
+  "description": "Projet 4 - ohmyfood ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PUJAR Boris",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+}
