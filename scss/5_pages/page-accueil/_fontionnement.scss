@@ -5,20 +5,46 @@
     padding: 20px 0 50px 0;
     background-color: $bc-fonctionnement;
 
+    & h1 {
+        padding: 0 0 0 20px;
+    }
+
     &__rectangle {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        padding: 0 20px 0 32px;
     }
 
     &__rectangle--number {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        gap: 23px;
         background-color: $bc-numbercards;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
         height: 72px;
         border-radius: 20px;
-
-        
-
     }
+
+    &__rectangle--number .number {
+        width: 24px;
+        height: 24px;
+        background-color: $primaire;
+        color: $txt-button;
+        border-radius: 50%;
+        margin-left: -10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+    }
+
+    &__rectangle--number .fa-fonctionnement {
+        color: $icon-fonctionnement;
+    }
+
+    &__rectangle--number:hover .fa-fonctionnement {
+        color: $primaire;
+    }     
 }
