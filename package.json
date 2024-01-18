@@ -4,7 +4,7 @@
   "description": "Projet 4 - ohmyfood ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./scss/main.scss:./assets/css/main.css  ./scss/restaurants.scss:./assets/css/restaurants.css"
   },
   "author": "PUJAR Boris",
   "license": "ISC",
