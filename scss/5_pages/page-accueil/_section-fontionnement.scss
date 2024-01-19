@@ -9,11 +9,24 @@
         padding: 0 0 0 20px;
     }
 
+    @media screen and (min-width: 1440px) {
+        padding: 50px 180px;
+    }
+
     &__rectangle {
         display: flex;
         flex-direction: column;
         gap: 20px;
         padding: 0 20px 0 32px;
+
+        @media screen and (min-width: 767.98px) {
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            padding: 0 50px 0 32px;
+        }
     }
 
     &__rectangle--number {
@@ -25,6 +38,10 @@
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
         height: 72px;
         border-radius: 20px;
+
+        @media screen and (min-width: 767.98px) {
+            width: 100%;
+        }
     }
 
     &__rectangle--number .number {
