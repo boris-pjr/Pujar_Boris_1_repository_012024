@@ -1,0 +1,36 @@
+.footer {
+    background: $bc-footer;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 25px;
+    gap: 16px;
+
+    &__logo {
+        color: $txt-footer;
+        font-family: 'Shrikhand';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    &__link--flex {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    &__link--text {
+        color: $txt-footer;
+        font-size: 16px;
+    }
+
+    & .fas {
+        width: 20px;
+    }
+}
