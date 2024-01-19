@@ -1,0 +1,82 @@
+.banniere img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    background-color: $bc-restaurants;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: -60px;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+
+    &__titre {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin: 31px 17px 0 4px;
+    }
+
+    &__titre h1 {
+        font-family: "Shrikhand",
+    }
+
+    & .fa-heart{
+        font-size: 26px;
+    }
+
+    & h3 {
+        border-bottom: solid 3px #99e2d0;
+        width: 12%;
+    }
+
+    & p {
+        font-size: small;
+    }
+
+    &__repas {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__repas--carte{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 15px;
+        background-color: $bc-header;
+        border-radius: 15px;
+        box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
+        
+        & .info {
+           display: flex;
+           flex-direction: column;
+            gap: 5px;
+        }
+    }
+}
+
+
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+
+    & button {
+        border-radius: 25px;
+        background: linear-gradient(175deg, #ff79da, #9356dc);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        border: none;
+        color: $txt-button;
+        height: 50px;
+        width: 186px;
+        font-size: 16px;
+    }
+}
+
+

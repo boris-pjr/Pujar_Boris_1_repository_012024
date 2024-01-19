@@ -35,6 +35,10 @@ header {
   padding: 14px 89px 13px 89px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   position: relative;
+  align-items: center;
+}
+header .fa-arrow-right {
+  font-size: x-large;
 }
 @media screen and (min-width: 767.98px) {
   header {
