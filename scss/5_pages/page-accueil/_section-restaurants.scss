@@ -68,11 +68,37 @@
         gap: 5px;
         margin: 10px 0 0 15px;
 
-        & .fa-heart{
+        & .heart{
             position: absolute;
             bottom: 30px;
             right: 20px;  
             font-size: 26px;
+            cursor: pointer;
+
+            & .fa-regular {
+                position: absolute;
+                z-index: 2;
+                cursor: pointer;
+    
+                &:hover {
+                    color: transparent;
+                }
+    
+                &:hover + .fa-solid {
+                    opacity: 1;
+                    transform: scale(1);
+                    transition: transform 50ms;
+                }
+            }
+    
+            & .fa-solid {
+                background: linear-gradient(1deg, #ff79da, #9356dc);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                transform: scale(0);
+                transform-origin: center;
+            }
         }
     }
 }

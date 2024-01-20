@@ -25,8 +25,33 @@
         font-family: "Shrikhand",
     }
 
-    & .fa-heart{
+    & .heart{
         font-size: 26px;
+        cursor: pointer;
+
+        & .fa-regular {
+            position: absolute;
+            z-index: 2;
+
+            &:hover {
+                color: transparent;
+            }
+
+            &:hover + .fa-solid {
+                opacity: 1;
+                transform: scale(1);
+                transition: transform 50ms;
+            }
+        }
+
+        & .fa-solid {
+            background: linear-gradient(1deg, #ff79da, #9356dc);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            transform: scale(0);
+            transform-origin: center;
+        }
     }
 
     & h3 {

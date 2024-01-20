@@ -230,11 +230,33 @@ header img {
   gap: 5px;
   margin: 10px 0 0 15px;
 }
-.cards__single--info .fa-heart {
+.cards__single--info .heart {
   position: absolute;
   bottom: 30px;
   right: 20px;
   font-size: 26px;
+  cursor: pointer;
+}
+.cards__single--info .heart .fa-regular {
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+}
+.cards__single--info .heart .fa-regular:hover {
+  color: transparent;
+}
+.cards__single--info .heart .fa-regular:hover + .fa-solid {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 50ms;
+}
+.cards__single--info .heart .fa-solid {
+  background: linear-gradient(1deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(0);
+  transform-origin: center;
 }
 
 .footer {
