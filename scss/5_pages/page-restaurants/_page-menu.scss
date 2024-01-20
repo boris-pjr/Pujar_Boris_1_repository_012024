@@ -45,7 +45,7 @@
         }
 
         & .fa-solid {
-            background: linear-gradient(1deg, #ff79da, #9356dc);
+            background: linear-gradient(1deg, $secondaire, $primaire);
             background-clip: text; //fait en sorte que le dégradé linéaire défini ci-dessus soit limité au texte de l'élément "fa-solid"
             -webkit-background-clip: text; //spécifie également la même propriété pour les navigateurs WebKit 
             color: transparent;

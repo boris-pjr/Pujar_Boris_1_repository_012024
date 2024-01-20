@@ -251,7 +251,7 @@ header img {
   transition: transform 50ms;
 }
 .cards__single--info .heart .fa-solid {
-  background: linear-gradient(1deg, #ff79da, #9356dc);
+  background: linear-gradient(1deg, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

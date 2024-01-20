@@ -92,7 +92,7 @@
             }
     
             & .fa-solid {
-                background: linear-gradient(1deg, #ff79da, #9356dc);
+                background: linear-gradient(1deg, $secondaire, $primaire);
                 background-clip: text;
                 -webkit-background-clip: text;
                 color: transparent;
