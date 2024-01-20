@@ -13,6 +13,7 @@
     border-radius: 50px 50px 0 0;
     position: relative;
 
+
     &__titre {
         display: flex;
         align-items: baseline;
@@ -66,6 +67,7 @@
     display: flex;
     justify-content: center;
     padding: 40px 0;
+    background-color: $bc-restaurants;
 
     & button {
         border-radius: 25px;
@@ -76,6 +78,13 @@
         height: 50px;
         width: 186px;
         font-size: 16px;
+
+        &:hover {
+            opacity: 0.8;
+            transition: opacity 1s;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.65);
+            transition: box-shadow 1s;
+        }
     }
 }
 
