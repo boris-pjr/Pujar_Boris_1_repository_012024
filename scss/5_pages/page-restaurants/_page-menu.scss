@@ -46,18 +46,59 @@
 
     &__repas--carte{
         display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        padding: 15px;
+        width: 100%;
         background-color: $bc-header;
         border-radius: 15px;
+        cursor: pointer;
+        overflow: hidden;
         box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
+        align-items: center;
+        
+        & .infoprix {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 15px;
+            overflow: hidden;
+        }
         
         & .info {
            display: flex;
            flex-direction: column;
-            gap: 5px;
+           gap: 5px;
+           white-space: nowrap;
+           overflow: hidden;
+           text-overflow: ellipsis;
+            
+            & h4, p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
         }
+
+        & .prix {
+            align-self: flex-end;
+        }
+
+        & .valid {
+            color: white;
+            background-color: #99e2d0;
+            padding: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0 15px 15px 0;
+            font-size: 25px;
+            margin-right: -70px;
+            overflow: hidden;
+            transition-duration: 0.6s;
+        }
+
+        &:hover > .valid{
+            margin-right: 0px;
+        }
+        // ">" est l'opérateur qui indique de sélectionner uniquement les éléments enfants directs.
     }
 }
 
