@@ -1,0 +1,24 @@
+.bouton {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: $bc-restaurants;
+
+    & button {
+        border-radius: 25px;
+        background: linear-gradient(175deg, #ff79da, #9356dc);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        border: none;
+        color: $txt-button;
+        height: 50px;
+        width: 186px;
+        font-size: 16px;
+
+        &:hover {
+            opacity: 0.8;
+            transition: opacity 1s;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.65);
+            transition: box-shadow 1s;
+        }
+    }
+}
