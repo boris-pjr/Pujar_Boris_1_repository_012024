@@ -206,6 +206,33 @@ header img {
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
+.cards__single .heart {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  font-size: 26px;
+  cursor: pointer;
+}
+.cards__single .heart .fa-regular {
+  position: absolute;
+  z-index: 2;
+}
+.cards__single .heart .fa-regular:hover {
+  color: transparent;
+}
+.cards__single .heart .fa-regular:hover + .fa-solid {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 50ms;
+}
+.cards__single .heart .fa-solid {
+  background: linear-gradient(1deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(0);
+  transform-origin: center;
+}
 .cards__single img {
   height: 70%;
   width: 100%;
@@ -232,33 +259,6 @@ header img {
   flex-direction: column;
   gap: 5px;
   margin: 10px 0 0 15px;
-}
-.cards__single--info .heart {
-  position: absolute;
-  bottom: 30px;
-  right: 20px;
-  font-size: 26px;
-  cursor: pointer;
-}
-.cards__single--info .heart .fa-regular {
-  position: absolute;
-  z-index: 2;
-}
-.cards__single--info .heart .fa-regular:hover {
-  color: transparent;
-}
-.cards__single--info .heart .fa-regular:hover + .fa-solid {
-  opacity: 1;
-  transform: scale(1);
-  transition: transform 50ms;
-}
-.cards__single--info .heart .fa-solid {
-  background: linear-gradient(1deg, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transform: scale(0);
-  transform-origin: center;
 }
 
 .footer {
