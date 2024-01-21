@@ -5,11 +5,12 @@ header {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     position: relative;
 
-    align-items: center;
-    
-
     & .fa-arrow-right {
         font-size: x-large;
+        position: absolute;
+        left: 17px;
+        width: 30px;
+        height: 30px;
     }
 
     @media screen and (min-width: 767.98px) {
