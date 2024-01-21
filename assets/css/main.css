@@ -240,7 +240,6 @@ header img {
 .cards__single--info .heart .fa-regular {
   position: absolute;
   z-index: 2;
-  cursor: pointer;
 }
 .cards__single--info .heart .fa-regular:hover {
   color: transparent;

@@ -159,6 +159,28 @@ header img {
 .menu__repas--carte:hover > .valid {
   margin-right: 0px;
 }
+.menu .carte-1 {
+  animation: carte-animation 1s;
+}
+.menu .carte-2 {
+  animation: carte-animation 1.5s;
+}
+.menu .carte-3 {
+  animation: carte-animation 2s;
+}
+.menu .carte-4 {
+  animation: carte-animation 2.5s;
+}
+@keyframes carte-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .bouton {
   display: flex;

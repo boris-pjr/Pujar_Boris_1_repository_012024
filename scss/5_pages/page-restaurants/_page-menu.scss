@@ -29,29 +29,7 @@
         font-size: 26px;
         cursor: pointer;
 
-        & .fa-regular {
-            position: absolute;
-            z-index: 2;
-
-            &:hover {
-                color: transparent;
-            }
-
-            &:hover + .fa-solid {
-                opacity: 1;
-                transform: scale(1);
-                transition: transform 50ms;
-            }
-        }
-
-        & .fa-solid {
-            background: linear-gradient(1deg, $secondaire, $primaire);
-            background-clip: text; //fait en sorte que le dégradé linéaire défini ci-dessus soit limité au texte de l'élément "fa-solid"
-            -webkit-background-clip: text; //spécifie également la même propriété pour les navigateurs WebKit 
-            color: transparent;
-            transform: scale(0);
-            transform-origin: center;
-        }
+        @include coeur;
     }
 
     & h3 {
@@ -125,6 +103,8 @@
         }
         // ">" est l'opérateur qui indique de sélectionner uniquement les éléments enfants directs.
     }
+
+    @include progressif;
 }
 
 
