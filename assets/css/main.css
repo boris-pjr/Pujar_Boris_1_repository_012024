@@ -223,7 +223,7 @@ header img {
 .cards__single .heart .fa-regular:hover + .fa-solid {
   opacity: 1;
   transform: scale(1);
-  transition: transform 50ms;
+  transition: transform 1s;
 }
 .cards__single .heart .fa-solid {
   background: linear-gradient(1deg, #FF79DA, #9356DC);
