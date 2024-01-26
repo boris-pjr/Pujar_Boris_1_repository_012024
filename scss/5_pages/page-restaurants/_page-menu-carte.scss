@@ -7,8 +7,13 @@
     margin-top: -60px;
     border-radius: 50px 50px 0 0;
     position: relative;
-    //margin: -60px auto 0 auto;
-    //max-width: 1024px;
+    
+
+    @media screen and (min-width: 767.98px) {
+        margin: -60px auto 0 auto;
+        max-width: 1024px;
+        padding: unset;
+    }
 
 
     &__titre {
@@ -16,6 +21,11 @@
         align-items: baseline;
         justify-content: space-between;
         margin: 31px 17px 0 4px;
+
+        @media screen and (min-width: 767.98px) {
+            justify-content: center;
+            gap: 40px;
+        }
     }
 
     &__titre h1 {
@@ -31,7 +41,7 @@
 
     & h3 {
         border-bottom: solid 3px #99e2d0;
-        width: 12%;
+        width: 40px;
         padding-top: 40px;
     }
 
@@ -43,6 +53,10 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
+
+        @media screen and (min-width: 767.98px) {
+            margin: auto 210px;
+        }
     }
 
     &__repas--carte{
@@ -104,9 +118,4 @@
 
     @include progressif;
 }
-
-
-
-
-
 

@@ -56,6 +56,7 @@ header img {
 .banniere img {
   width: 100%;
   object-fit: cover;
+  height: 300px;
 }
 
 .menu {
@@ -67,11 +68,24 @@ header img {
   border-radius: 50px 50px 0 0;
   position: relative;
 }
+@media screen and (min-width: 767.98px) {
+  .menu {
+    margin: -60px auto 0 auto;
+    max-width: 1024px;
+    padding: unset;
+  }
+}
 .menu__titre {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   margin: 31px 17px 0 4px;
+}
+@media screen and (min-width: 767.98px) {
+  .menu__titre {
+    justify-content: center;
+    gap: 40px;
+  }
 }
 .menu__titre h1 {
   font-family: "Shrikhand";
@@ -102,7 +116,7 @@ header img {
 }
 .menu h3 {
   border-bottom: solid 3px #99e2d0;
-  width: 12%;
+  width: 40px;
   padding-top: 40px;
 }
 .menu p {
@@ -112,6 +126,11 @@ header img {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+@media screen and (min-width: 767.98px) {
+  .menu__repas {
+    margin: auto 210px;
+  }
 }
 .menu__repas--carte {
   display: flex;
@@ -190,6 +209,12 @@ header img {
   justify-content: center;
   padding: 40px 0;
   background-color: #F6F6F6;
+}
+@media screen and (min-width: 767.98px) {
+  .bouton {
+    margin: auto;
+    max-width: 1024px;
+  }
 }
 .bouton button {
   border-radius: 25px;
