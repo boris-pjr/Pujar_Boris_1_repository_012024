@@ -1,0 +1,79 @@
+
+.container {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fin-chargement 1s forwards 3s;
+    background-color: rgba(255, 255, 255, 4.918);
+
+    &__load {
+        width: 30%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: "Shrikhand", cursive;
+        animation: début-chargement 2s linear;
+
+        &--1 {
+            color: $primaire;
+            animation: load-animation 0.8s infinite;
+            font-size: 50px;
+        }
+
+        &--2 {
+            color: $secondaire;
+            animation: load-animation 1.6s infinite;
+            font-size: 50px;
+        }
+
+        &--3 {
+            color: $tertiaire;
+            animation: load-animation 2.4s infinite;
+            font-size: 50px;
+        }
+    }
+
+    @keyframes load-animation {
+        0% {
+          transform: rotate(0deg);
+        }
+      
+        50% {
+          transform: rotate(180deg);
+        }
+      
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+      @keyframes début-chargement {
+        0% {
+          opacity: 0;
+        }
+      
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes fin-chargement {
+        100% {
+          opacity: 0;
+          visibility: hidden;
+        }
+    }
+    
+}
+  
+  
+  
+  
+  
+  
