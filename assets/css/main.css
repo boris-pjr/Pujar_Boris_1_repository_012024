@@ -171,7 +171,7 @@ header img {
   padding: 20px 0 50px 0;
   background-color: #FFFFFF;
 }
-.fonctionnement h1 {
+.fonctionnement h2 {
   padding: 0 0 0 20px;
 }
 @media screen and (min-width: 1440px) {
@@ -246,7 +246,7 @@ header img {
   padding: 20px 0 50px 0;
   background-color: #F6F6F6;
 }
-.restaurants h1 {
+.restaurants h2 {
   padding: 0 0 0 20px;
 }
 @media screen and (min-width: 1440px) {
